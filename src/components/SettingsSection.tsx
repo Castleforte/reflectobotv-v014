@@ -188,6 +188,8 @@ function SettingsSection({ onClose, onShowGrownUpModal }: SettingsSectionProps) 
             </div>
           </div>
 
+          {/* COMMENTED OUT: Reset Progress section - hidden from users but available for development */}
+          {/*
           <div className="settings-row">
             <div className="settings-label">
               <img src="/Brain-icon.png" alt="Brain icon" className="settings-icon" />
@@ -216,6 +218,7 @@ function SettingsSection({ onClose, onShowGrownUpModal }: SettingsSectionProps) 
               </button>
             </div>
           </div>
+          */}
 
           <div className="settings-row">
             <div className="settings-label">
@@ -247,6 +250,8 @@ function SettingsSection({ onClose, onShowGrownUpModal }: SettingsSectionProps) 
         style={{ display: 'none' }}
       />
 
+      {/* COMMENTED OUT: Reset modal - hidden from users but available for development */}
+      {/*
       {showResetModal && (
         <div className="modal-overlay" onClick={() => setShowResetModal(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -273,6 +278,7 @@ function SettingsSection({ onClose, onShowGrownUpModal }: SettingsSectionProps) 
           </div>
         </div>
       )}
+      */}
     </div>
   );
 }
